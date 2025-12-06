@@ -473,7 +473,7 @@ footer {
 
   /* Navbar */
   .navbar {
-    padding: 15px 25px;
+    padding: 15px 20px;
     flex-direction: column;
     gap: 10px;
   }
@@ -582,6 +582,227 @@ footer {
   margin-top: 25px;
 }
 
+/* === Hamburger Menu === */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #ffd166;
+  cursor: pointer;
+}
 
+/* Mobile Navigation */
+@media (max-width: 768px) {
 
+  .hamburger {
+    display: block;
+    z-index: 1100;
+  }
 
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .contact-btn {
+    display: none; /* Hide button in mobile for cleaner look */
+  }
+}
+/* ==== Hamburger Menu ==== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #ffd166;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    z-index: 1100;
+  }
+
+  /* Hide normal nav */
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .contact-btn {
+    display: none; /* Hides "Let's Talk" on mobile */
+  }
+}
+/* Hamburger Animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* pushes logo left + hamburger right */
+  align-items: center;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Move hamburger to top-right */
+.hamburger {
+  margin-left: auto;
+  cursor: pointer;
+}
+/* Mobile layout for hero */
+@media (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center everything horizontally */
+    text-align: center;     /* center text */
+    padding: 100px 20px;
+  }
+
+  .hero-content {
+    order: 2; /* text comes after image */
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: 1; /* image comes first */
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #ffd166;
+    object-fit: cover;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* ===== Hamburger Menu ===== */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #ffd166; /* your theme color */
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Show hamburger only on mobile */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  /* Mobile nav menu */
+  .nav-links {
+    display: none; /* hidden initially */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 60px; /* just below navbar */
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.95);
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #e2e8f0;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #ffd166;
+  }
+
+  /* Hide contact button on mobile */
+  .contact-btn {
+    display: none;
+  }
+}
+
+/* Hamburger animation when clicked */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
