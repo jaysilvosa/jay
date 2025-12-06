@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- s
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio | UI/UX Designer</title>
 
-  <!-- Font Awesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
   <!-- ===== Navigation ===== -->
   <header class="navbar">
+
+    <!-- Logo -->
     <div class="logo">JAY</div>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Links -->
     <nav class="nav-links">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
@@ -28,6 +36,8 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <!-- Contact Button -->
     <a href="#contact" class="contact-btn">Let’s Talk</a>
   </header>
 
@@ -37,24 +47,29 @@
       <p class="intro">Hello, I'm</p>
       <h1><span>Jay Silvosa</span></h1>
       <h2>UI/UX Designer / Video Editor</h2>
+
       <p class="description">
         Passionate about crafting digital experiences that inspire and connect people through creativity.
       </p>
-  <!-- Social Links -->
-<div class="social-links">
-  <a href="mailto:jay_silvosa@sjp2cd.edu.ph" class="social-item">
-    <i class="fas fa-envelope"></i> Email
-  </a>
 
-  <a href="https://www.facebook.com/jplazaasovlis.2024" class="social-item" target="_blank">
-    <i class="fa-brands fa-facebook"></i> Facebook
-  </a>
-</div>
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="mailto:jay_silvosa@sjp2cd.edu.ph" class="social-item">
+          <i class="fas fa-envelope"></i> Email
+        </a>
 
-<!-- Move hero buttons directly below social links -->
+        <a href="https://www.facebook.com/jplazaasovlis.2024"
+           class="social-item" target="_blank">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+      </div>
+
+      <!-- Hero Buttons -->
       <div class="hero-buttons">
         <a href="#contact" class="btn-primary">Hire Me</a>
-        <a href="Silvosa_Jay_Resume.pdf" class="btn-outline" download="Silvosa_Jay_Resume.pdf">
+        <a href="Silvosa_Jay_Resume.pdf"
+           class="btn-outline"
+           download="Silvosa_Jay_Resume.pdf">
           <i class="fas fa-download"></i> Download Resume
         </a>
       </div>
@@ -64,67 +79,59 @@
       <img src="j.jpg" alt="Profile Photo" />
     </div>
 
-    <div class="stats">
+    
+  </section>
+
+  <!-- ===== Tools Section ===== -->
+  <section id="tools" class="tools">
+    <h2>Tools & Technologies</h2>
+
+    <div class="tool-icons">
+      <div class="tool-group">
+        <h3>Tools I Use</h3>
+        <div class="icons">
+          <img src="chatgpt.jpg" alt="ChatGPT" />
+          <img src="davinci.png" alt="DaVinci Resolve" />
+          <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="VS Code" />
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3>Languages</h3>
+        <div class="icons">
+          <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" />
+          <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" />
+          <img src="java.png" alt="JavaScript" />
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="stats">
       <div><h3>3+</h3><p>Years of Experience</p></div>
       <div><h3>100+</h3><p>Projects Completed</p></div>
       <div><h3>99%</h3><p>Client Satisfaction</p></div>
     </div>
-  </section>
-  
- <!-- ===== Tools & Technologies Section ===== -->
-<section id="tools" class="tools">
-  <h2>Tools & Technologies</h2>
-
-  <div class="tool-icons">
-
-    <!-- Tools Used -->
-    <div class="tool-group">
-      <h3>Tools I Use</h3>
-      <div class="icons">
-        <img src="chatgpt.jpg" alt="ChatGPT">
-        <img src="davinci.png" alt="DaVinci Resolve">
-        <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="VS Code">
-      </div>
-    </div>
-
-    <!-- Languages Used -->
-    <div class="tool-group">
-      <h3>Languages</h3>
-      <div class="icons">
-        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5">
-        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3">
-        <img src="java.png" alt="JavaScript">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <!-- ===== About Section ===== -->
+  <!-- ===== About ===== -->
   <section id="about" class="about">
     <h2>About Me</h2>
 
     <div class="about-card">
       <p>
         I’m a UI/UX Designer and Video Editor passionate about creating meaningful
-        digital experiences. I enjoy transforming ideas into visually compelling
-        products using modern design principles and storytelling.
+        digital experiences.
       </p>
 
       <p>
         I specialize in UI/UX design, prototyping, branding, and video editing.
-        My goal is to combine creativity and strategy to help businesses stand out
-        and connect with their audience.
       </p>
 
       <p>
-        Outside of design, I enjoy exploring new tools, learning visual trends, and
-        collaborating with people who share the same passion for creativity.
+        Outside of design, I explore new tools and trends and collaborate with creative people.
       </p>
     </div>
   </section>
 
-  <!-- ===== Education Section ===== -->
+  <!-- ===== Education ===== -->
   <section id="education" class="education">
     <h2>Educational Background</h2>
     <div class="education-card">
@@ -133,75 +140,81 @@
     </div>
   </section>
 
-  <!-- ===== Services Section ===== -->
+  <!-- ===== Services ===== -->
   <section id="services" class="services">
     <h2>My Services</h2>
+
     <div class="service-boxes">
       <div class="service-card">
         <h3>UI/UX Design</h3>
-        <p>Beautiful, user-friendly interfaces and digital experiences for web and mobile.</p>
+        <p>Beautiful, user-friendly interfaces for web and mobile.</p>
       </div>
+
       <div class="service-card">
         <h3>Video Editing</h3>
-        <p>Professional storytelling through visuals, motion, and transitions.</p>
+        <p>Professional storytelling through visuals and motion.</p>
       </div>
+
       <div class="service-card">
         <h3>Brand Identity</h3>
-        <p>Logos and branding systems that represent your business perfectly.</p>
+        <p>Logos and branding systems that represent your business.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== Projects Section ===== -->
+  <!-- ===== Projects ===== -->
   <section id="projects" class="projects">
     <h2>Featured Projects</h2>
 
     <div class="project-gallery">
-
-      <!-- ==== PROJECT 1 (Now your Figma Project) ==== -->
-      <a 
-        href="https://www.figma.com/proto/Pn6vvR6Bz0HWWi66L11BKf/Untitled?node-id=1-32&starting-point-node-id=1%3A2"
-        target="_blank"
-        class="project-item"
-      >
-        <img src="project1.jpg" alt="Figma UI/UX Project">
+      <a href="https://www.figma.com/proto/Pn6vvR6Bz0HWWi66L11BKf/Untitled?node-id=1-32"
+         class="project-item" target="_blank">
+        <img src="project1.jpg" alt="Figma UI/UX Project" />
       </a>
 
-      <!-- ==== PROJECT 2 (Still your second project) ==== -->
-      <a href="https://www.figma.com/proto/y1wO5pVROC0LtQT0ClXGOO/Untitled?t=V6TGCBXDWPzOqYQR-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-3" target="_blank" class="project-item">
-        <img src="project2.jpg" alt="Project 2">
+      <a href="https://www.figma.com/proto/y1wO5pVROC0LtQT0ClXGOO"
+         class="project-item" target="_blank">
+        <img src="project2.jpg" alt="Project 2" />
       </a>
-
     </div>
   </section>
 
-
-  
-
+  <!-- ===== Contact ===== -->
   <section id="contact" class="contact">
     <h2>Let’s Work Together!</h2>
-    <p>Feel free to reach out for collaborations or just to say hello 👋</p>
+    <p>Feel free to reach out for collaborations.</p>
+
     <form class="contact-form">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn-primary" type="submit">Send Message</button>
     </form>
   </section>
- 
 
   <!-- ===== Footer ===== -->
   <footer>
     <p>© 2025 Jay Silvosa. All Rights Reserved.</p>
   </footer>
 
-  <!-- ===== Script ===== -->
+  <!-- ===== Scripts ===== -->
   <script>
+    // HAMBURGER MENU TOGGLE
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      navLinks.classList.toggle("open");
+    });
+
+    // NAVBAR LINK HIGHLIGHT ON SCROLL
     const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-links a");
+    const links = document.querySelectorAll(".nav-links a");
 
     window.addEventListener("scroll", () => {
       let current = "";
+
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 120;
         if (scrollY >= sectionTop) {
@@ -209,7 +222,7 @@
         }
       });
 
-      navLinks.forEach((link) => {
+      links.forEach((link) => {
         link.classList.remove("active");
         if (link.getAttribute("href").includes(current)) {
           link.classList.add("active");
